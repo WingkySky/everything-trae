@@ -1,6 +1,6 @@
 # Everything Trae
 
-[中文](README.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md)
+[中文](README.zh.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Français](README.fr.md)
 
 Trae AI Agent Configuration Collection to Enhance Agent Performance
 
@@ -89,6 +89,7 @@ Configured with 8 MCP servers:
 ### Usage
 
 1. **Select Appropriate Agent**
+
    ```
    @planner Analyze this requirement and create a development plan
    @coder Implement this feature
@@ -98,8 +99,8 @@ Configured with 8 MCP servers:
    @performance Analyze performance bottlenecks
    @database Optimize database queries
    ```
-
 2. **Use Slash Commands**
+
    ```
    /plan        - Plan task
    /review      - Code review
@@ -108,13 +109,13 @@ Configured with 8 MCP servers:
    /optimize    - Code optimization
    /security    - Security audit
    ```
-
 3. **Trigger Skills**
+
    - TDD Development: Trae automatically uses TDD workflow when you describe requirements
    - Code Review: Automatic review process triggered before submission
    - Git Commit: Follow standardized commit message format
-
 4. **Use MCP Tools**
+
    - File Operations: Trae can read and write project files
    - Git Operations: Trae can view and operate Git repositories
    - Database Operations: Trae can interact with PostgreSQL databases
@@ -180,17 +181,17 @@ For detailed configuration information, please refer to [.trae/README.md](.trae/
 
 This project borrows design concepts from everything-claude-code but has been optimized for Trae:
 
-| Feature | everything-claude-code | Everything Trae |
-|---------|----------------------|-----------------|
-| Agents | 9 professional agents | **10 core agents** |
-| Skills | 11 skill modules | **8 core skills** |
-| Hooks | Trigger-based automation | **4 key hooks** |
-| Commands | 14 slash commands | **6 core commands** |
-| Rules | Rule constraints | **3 core rules** |
-| MCP | External tool integration | **8 MCP servers** |
-| Configuration | Claude Code specific | **Trae specific** |
-| Configuration validation | None | **Validation script** |
-| Internationalization | None | **6 languages** |
+| Feature                  | everything-claude-code    | Everything Trae             |
+| ------------------------ | ------------------------- | --------------------------- |
+| Agents                   | 9 professional agents     | **10 core agents**    |
+| Skills                   | 11 skill modules          | **8 core skills**     |
+| Hooks                    | Trigger-based automation  | **4 key hooks**       |
+| Commands                 | 14 slash commands         | **6 core commands**   |
+| Rules                    | Rule constraints          | **3 core rules**      |
+| MCP                      | External tool integration | **8 MCP servers**     |
+| Configuration            | Claude Code specific      | **Trae specific**     |
+| Configuration validation | None                      | **Validation script** |
+| Internationalization     | None                      | **6 languages**       |
 
 ## Configuration Statistics
 
@@ -198,28 +199,29 @@ This project borrows design concepts from everything-claude-code but has been op
 - **Markdown Documents**: 37
 - **Configuration Files**: 5
 - **Script Files**: 1
-- **Supported Languages**: 6 (Chinese, English, Japanese, Korean, Spanish, French)
+- **Supported Languages**: 6 (English, Chinese, Japanese, Korean, Spanish, French)
 
 ## Troubleshooting
 
 ### Common Issues
 
 1. **Configuration not taking effect**
+
    - Check configuration file path
    - Verify configuration file format
    - Check Trae logs
-
 2. **Performance issues**
+
    - Reduce the number of Agents
    - Optimize Skill size
    - Reduce MCP servers
-
 3. **Permission issues**
+
    - Check file permissions
    - Verify MCP configuration
    - Confirm user permissions
-
 4. **Validation errors**
+
    - Run `./validate-config.sh` to check configuration
    - Review error messages
    - Update configuration files accordingly
@@ -246,6 +248,7 @@ MIT License
 ## Changelog
 
 ### v2.0.0 (2026-02-28)
+
 - Added 4 new professional agents (Architect, DevOps, Performance, Database)
 - Added 6 slash commands (plan, review, test, docs, optimize, security)
 - Added 3 rule files (coding-standards, security-rules, testing-rules)
@@ -255,6 +258,7 @@ MIT License
 - Added internationalization support (6 languages)
 
 ### v1.0.0 (2026-02-28)
+
 - Initial release
 - Configured 6 professional agents
 - Configured 4 core skill modules
