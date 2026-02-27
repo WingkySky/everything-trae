@@ -1,0 +1,125 @@
+# Trae 配置文件
+
+## 配置说明
+
+此文件用于配置 Trae 的全局设置。你可以根据需要调整以下配置项。
+
+## 基本配置
+
+```json
+{
+  "trae": {
+    "version": "1.0.0",
+    "defaultAgent": "coder",
+    "autoLoadSkills": true,
+    "autoLoadHooks": true
+  }
+}
+```
+
+## 高级配置
+
+### Agent 配置
+
+```json
+{
+  "agents": {
+    "planner": {
+      "enabled": true,
+      "priority": 1
+    },
+    "coder": {
+      "enabled": true,
+      "priority": 2
+    },
+    "reviewer": {
+      "enabled": true,
+      "priority": 3
+    }
+  }
+}
+```
+
+### Skill 配置
+
+```json
+{
+  "skills": {
+    "tdd-workflow": {
+      "enabled": true,
+      "autoTrigger": true
+    },
+    "code-review-standards": {
+      "enabled": true,
+      "autoTrigger": true
+    }
+  }
+}
+```
+
+### Hook 配置
+
+```json
+{
+  "hooks": {
+    "pre-commit": {
+      "enabled": true,
+      "autoRun": true
+    },
+    "pre-push": {
+      "enabled": true,
+      "autoRun": true
+    }
+  }
+}
+```
+
+### MCP 配置
+
+```json
+{
+  "mcp": {
+    "filesystem": {
+      "enabled": true,
+      "root": "/path/to/project"
+    },
+    "git": {
+      "enabled": true,
+      "root": "/path/to/project"
+    }
+  }
+}
+```
+
+## 环境变量
+
+你也可以使用环境变量来配置 Trae：
+
+```bash
+export TRAE_DEFAULT_AGENT=coder
+export TRAE_AUTO_LOAD_SKILLS=true
+export TRAE_AUTO_LOAD_HOOKS=true
+```
+
+## 配置优先级
+
+1. 环境变量（最高优先级）
+2. 项目配置文件
+3. 全局配置文件
+4. 默认配置（最低优先级）
+
+## 配置验证
+
+配置修改后，可以使用以下命令验证配置：
+
+```bash
+trae config:validate
+```
+
+## 配置重载
+
+配置修改后，可以使用以下命令重载配置：
+
+```bash
+trae config:reload
+```

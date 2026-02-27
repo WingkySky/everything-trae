@@ -1,7 +1,7 @@
 # .gitignore
 
 # Trae 配置
-.trae/
+# .trae/
 
 # IDE 配置
 .idea/

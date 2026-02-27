@@ -1,0 +1,83 @@
+{
+  "trae": {
+    "version": "1.0.0",
+    "defaultAgent": "coder",
+    "autoLoadSkills": true,
+    "autoLoadHooks": true
+  },
+  "agents": {
+    "planner": {
+      "enabled": true,
+      "priority": 1
+    },
+    "coder": {
+      "enabled": true,
+      "priority": 2
+    },
+    "reviewer": {
+      "enabled": true,
+      "priority": 3
+    },
+    "debugger": {
+      "enabled": true,
+      "priority": 4
+    },
+    "tester": {
+      "enabled": true,
+      "priority": 5
+    },
+    "writer": {
+      "enabled": true,
+      "priority": 6
+    }
+  },
+  "skills": {
+    "tdd-workflow": {
+      "enabled": true,
+      "autoTrigger": true
+    },
+    "code-review-standards": {
+      "enabled": true,
+      "autoTrigger": true
+    },
+    "git-commit-standards": {
+      "enabled": true,
+      "autoTrigger": true
+    },
+    "documentation-standards": {
+      "enabled": true,
+      "autoTrigger": true
+    }
+  },
+  "hooks": {
+    "pre-commit": {
+      "enabled": true,
+      "autoRun": true
+    },
+    "post-commit": {
+      "enabled": true,
+      "autoRun": true
+    },
+    "pre-push": {
+      "enabled": true,
+      "autoRun": true
+    },
+    "build": {
+      "enabled": true,
+      "autoRun": true
+    }
+  },
+  "mcp": {
+    "filesystem": {
+      "enabled": true,
+      "root": "/Users/skywing/Documents/trae_projects/everything-trae"
+    },
+    "git": {
+      "enabled": true,
+      "root": "/Users/skywing/Documents/trae_projects/everything-trae"
+    },
+    "memory": {
+      "enabled": true
+    }
+  }
+}
